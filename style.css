@@ -1,0 +1,265 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root {
+  --color-primary: #ff0000;
+  --color-dark: #000000;
+  --color-light: #ffffff;
+  --color-bg: #646161;
+
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 2rem;
+
+  --radius: 10px;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:var(--color-bg);
+    color: var(--color-light);
+
+}
+.container{
+     width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
+
+   
+}
+
+header{
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 0.5rem;
+    background-color:var(--color-dark);
+    color: var(--color-light);
+
+}
+
+header h1{
+    padding-top: var(--spacing-md);
+}
+
+header nav{
+    padding: var(--spacing-md);
+    
+}
+header a{
+    padding: 5px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+header a:hover{
+    background-color: var(--color-primary);
+    border-radius: 10px;
+}
+
+
+.hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.hero-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-lg);
+
+    margin-top: var(--spacing-lg);
+    font-size: larger;
+}
+ 
+.hero-text{
+ display: flex;
+   flex-direction: column;
+   justify-content: center;
+   
+   gap:35px;
+
+   background-color: var(--color-dark);
+   border-radius: var(--radius);
+   padding: 1.5rem;
+   text-align: center;
+
+   box-shadow: 2px 2px 20px rgb(0, 0, 0);
+
+}
+
+
+.btn-principal{
+    padding: var(--spacing-lg);
+
+    background-color: var(--color-light);
+    color: #000000;
+
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.btn-principal:hover{
+    color: #ffffff;
+    background-color:var(--color-primary);
+}
+
+.hero-image{
+     margin: var(--spacing-lg);
+   background-color: var(--color-dark);
+   border-radius: 20px 40px;
+   box-shadow: 1px 1px 10px #000000;
+}
+
+.beneficios{
+    padding: var(--spacing-lg);
+
+
+   
+   background-color:var(--color-dark);
+   box-shadow: 1px 1px 10px black;
+
+
+  
+}
+
+.beneficios h2{
+    color:#ffffff;
+    text-align: center;
+    
+}
+
+.beneficios h3{
+   
+    margin-bottom: var(--spacing-lg);
+}
+
+.beneficios-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px, 1fr));
+    gap: var(--spacing-lg);
+
+    padding: var(--spacing-lg);
+    text-align: center;
+
+  
+}
+.beneficios-card{
+    color: #ffffff;
+    background-color: #646161;
+    padding: 2rem ;
+    
+    transition:ease 0.3s ;
+
+}
+
+.beneficios-card:hover{
+   
+    background-color:var(--color-primary);
+    box-shadow: 1px 1px 10px #ffffff;
+   transform: translateY(-10px);
+}
+
+.depoimentos{
+    text-align: center;
+    padding: var(--spacing-lg);
+    background-color: #000000;
+     box-shadow: var(--spacing-md) 1px 10px #000000;
+    
+}
+.depoimentos h2{
+    margin-bottom: var(--spacing-lg);
+}
+ .depoimento-caixa{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--spacing-lg);
+ }
+
+.depoimento-card{
+
+    padding: var(--spacing-md);
+
+   
+    background-color: #646161;
+    transition:ease 0.3s ;
+}
+
+ .depoimento-card img{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.depoimento-card span{
+    color: rgb(255, 0, 0);
+}
+.depoimento-card:hover{
+    transform: translateY(-10px);
+    box-shadow: 1px 1px 10px white;
+
+}
+p{
+    margin-top: 10px;
+}
+
+.garantia{
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    
+
+    padding: 1.2rem;
+
+    font-size: 1rem;
+    text-align: center;
+    color: var(--color-light);
+    background-color: #ff0000;
+    
+   
+    box-shadow: 1px 1px 10px black;
+}
+.cta{
+    padding: var(--spacing-md);
+
+     box-shadow: 1px 1px 10px black;
+    background-color:var(--color-dark);
+    text-align: center;
+}
+.cta-text{
+    padding: var(--spacing-md);
+}
+.cta-btn{
+    padding: var(--spacing-md);
+}
+.cta-btn a{
+    padding: var(--spacing-md);
+    border-radius: var(--spacing-lg);
+   
+    text-decoration: none;
+    background-color:var(--color-primary);
+    color: #ffffff;
+}
+.cta-note{
+    color: #ff0000;
+}
+footer{
+
+    padding: var(--spacing-md);
+    margin: 1rem 0 0 0 ;
+    background-color:var(--color-dark);
+    text-align: center;
+}
+@media (min-width: 768px) {
+  .hero-content {
+     flex-direction: row;
+  }
+}
